@@ -1,0 +1,56 @@
+body{
+ background-color: darkgray;
+}
+ nav{
+   background-color: black;
+   display:grid;
+   grid-template-columns: auto repeat(4,1fr);
+   align-items: center;
+   margin-bottom: 10px;
+
+ }
+nav a{
+  padding-left: 30px;
+  padding-righ: 3px;
+  color: white;
+
+}
+nav .heim{
+  background-color: orangered;
+  font-weight: 800;
+  font-size: 32px;
+  padding:10px;
+
+}
+
+
+main {
+  display: grid;
+  grid-template-columns: 100px 200px 100px;
+  grid-gap: 5px;
+
+  align-content: center;
+  justify-content: center;
+}
+
+main div {
+  padding: 30px;
+}
+
+.rute1 {
+  border: 2px solid red;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.rute2 {
+  border: 2px solid blue;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.rute3 {
+  border: 2px solid lime;
+  grid-column: 1;
+  grid-row: 1;
+}
