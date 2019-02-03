@@ -1,46 +1,85 @@
 <!DOCTYPE html>
 <html lang="no" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title> Digitale utstyr </title>
-    <link rel="stylesheet" href="kap3.css">
+
+<head>
+  <meta charset="utf-8">
+  <title> Digitale utstyr </title>
+  <link rel="stylesheet" href="kap3.css">
+  <link rel="icon" href="bilde/keyboard.jpg">
+
+  <style>
+    #pc-comp-info {
+      display: flex; flex-direction: row;
+    }
+    main p {
+      padding: 10px;
+    }
+
+    @media screen and (max-width: 800px)
+    {
+      #pc-comp-info {
+      flex-direction: column;
+    }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-     <!-- OVERSKRIFT, NAVIGASJON. -->
-     <section style="">
-       <a href="index.html"> Home</a>
-       <a href="side2.html" > Binære tal </a>
-       <a href="side3.html"> Bilde </a>
-       <a href="side4.html"> Teiknsett </a>
-       <a href="side5.html" > Lyd </a>
-       <a href="side6.html"> Video </a>
-       <a href="side7.html"  style="color:lightblue"> |Digitale utstyr|</a>
+    <!-- OVERSKRIFT, NAVIGASJON. -->
+    <section style="">
+      <article>
+        <a href="index.html"> Home </a>
+        <a href="side2.html"> Binære tal </a>
+        <a href="side3.html"> Bilde </a>
+        <a href="side4.html"> Teiknsett </a>
+      </article>
+      <article>
+        <a href="side5.html"> Lyd </a>
+        <a href="side6.html"> Video </a>
+        <a href="side7.html" style="color:lightblue"> |Digitale utstyr| </a>
+      </article>
 
-     </section>
-     <h1 style="color:ghostwhite">|Fysiske signal i datautstyr|</h1>
-     <h2 style="color:ghostwhite">Digitale Utstyr</h2>
+    </section>
+    
 
   </header>
-  <main>
-    <video src="bilde/pc.mp4" controls poster="bilde/computer.jpg">
-    </video>
-    <img src="bilde/komponentar.png" alt=" Ei datamaskin er satt saman av ulike komponentar">
-    <p>Ei datamaskin er sett saman av ulike komponentar, ein prosessor (CPU), minnebrikka, harddisk, grafikkort, straumkjelde og hovudkort. Alt blit plassert inn i eit kabinett
-    </p>
-    <ul>
-      <li>Kabinett- Ein boks der alle komponentane blir plassert</li>
-      <li>Hovudkort- koplar saman alle dei ulike komponentane i ei datamaskin.</li>
-      <li>Hardisk- også kalla sekundærminne, lagrar opperativsystem,pogram og datafiler. Den har stor lagringskapasitet.</li>
-      <li>Prosessor- Eller CPU, leser koden i datapogram og bruker den.</li>
-      <li>Minnebrikke- Meir kjent som RAM, er der maskina lagrar dei andre pogramma og data som skal brukast.</li>
-      <li>Grafikkort- Tolkar bilder og videoar og viser punktgrafikken på skjermen.</li>
-      <li>Straumkjelde- Det som gir datamaskina straum til å fungere. </li>
-    </ul>
-    <p>Digitale utsyr kan koplast opp mot eit digitalt nettverk med hjelp av eit nettverkskort. Kommunikasjonen gjennom nettverket kallar ein nattverkskommunikasjon,
-      ofte mellom ei datamaskin og ein ruter i eit heime- nettverk. Heime-nettverket er som regel trådlaust og er mellom datamaskina, printer, telefon og ruteren, dette skjer gjennom WLAN
-    - Wireless Local Area natwork.  </p>
+  <main style="background-image: url('bilde/computer.jpg');background-size: cover; position: absolute; left: 0%; margin-top: 40px; width: 100%;">
+    
+    <div style="display: flex; flex-direction: column; width: 100%; background-color: rgba(19, 19, 19, 0.685); font-size: 20px;">
+      <h1 style="color:ghostwhite; align-self: center;">|Fysiske signal i datautstyr|</h1>
+      <h2 style="color:ghostwhite; align-self: center;">Digitale Utstyr</h2>
+      <article style="min-height: 600px;">
+        <article id="pc-comp-info">
+          <img src="bilde/komponentar.png" width="400" height="200" style="padding: 10px; border-radius: 25px; align-self: center;"
+            alt=" Ei datamaskin er satt saman av ulike komponentar">
+          <div style="">
+            <p>Ei datamaskin er sett saman av ulike komponentar, ein prosessor (CPU), minnebrikka, harddisk, grafikkort,
+              straumkjelde og hovudkort. Alt blit plassert inn i eit kabinett
+            </p>
+            <ul>
+              <li>Kabinett- Ein boks der alle komponentane blir plassert</li>
+              <li>Hovudkort- koplar saman alle dei ulike komponentane i ei datamaskin.</li>
+              <li>Hardisk- også kalla sekundærminne, lagrar opperativsystem,pogram og datafiler. Den har stor
+                lagringskapasitet.</li>
+              <li>Prosessor- Eller CPU, leser koden i datapogram og bruker den.</li>
+              <li>Minnebrikke- Meir kjent som RAM, er der maskina lagrar dei andre pogramma og data som skal brukast.</li>
+              <li>Grafikkort- Tolkar bilder og videoar og viser punktgrafikken på skjermen.</li>
+              <li>Straumkjelde- Det som gir datamaskina straum til å fungere. </li>
+            </ul>
+          </div>
+        </article>
+      
+        <p>Digitale utsyr kan koplast opp mot eit digitalt nettverk med hjelp av eit nettverkskort. Kommunikasjonen gjennom
+          nettverket kallar ein nattverkskommunikasjon,
+          ofte mellom ei datamaskin og ein ruter i eit heime- nettverk. Heime-nettverket er som regel trådlaust og er
+          mellom datamaskina, printer, telefon og ruteren, dette skjer gjennom WLAN
+          - Wireless Local Area natwork. </p>
+        <video src="bilde/pc.mp4" style="align-self: center; justify-self: center; padding: 10px;" controls width="400" height="400"></video>
+      </article>
+    </div>
   </main>
 
-</body>s
+</body>
+
 </html>
