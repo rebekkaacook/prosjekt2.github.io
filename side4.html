@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="no" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title> Teiknsett </title>
-    <link rel="stylesheet" href="kap3.css">
+
+<head>
+  <meta charset="utf-8">
+  <title> Teiknsett </title>
+  <link rel="stylesheet" href="kap3.css">
+  <link rel="icon" href="bilde/keyboard.jpg">
+
+  <style>
+    main article {
+      padding: 5px;
+      background-color: rgba(34, 34, 34, 0.61);
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
 </head>
+
 <body>
   <header>
-     <!-- OVERSKRIFT, NAVIGASJON. -->
-     <section style="">
-       <a href="index.html"> Home</a>
-       <a href="side2.html" > Binære tal </a>
-       <a href="side3.html"> Bilde </a>
-       <a href="side4.html" style="color:lightblue"> |Teiknsett|</a>
-       <a href="side5.html"> Lyd </a>
-       <a href="side6.html"> Video </a>
-       <a href="side7.html"> Digitale utstyr </a>
+    <!-- OVERSKRIFT, NAVIGASJON. -->
+    <section style="">
+      <article>
+        <a href="index.html"> Home </a>
+        <a href="side2.html"> Binære tal </a>
+        <a href="side3.html"> Bilde </a>
+        <a href="side4.html" style="color:lightblue"> |Teiknsett| </a>
+      </article>
+      <article>
+        <a href="side5.html"> Lyd </a>
+        <a href="side6.html"> Video </a>
+        <a href="side7.html"> Digitale utstyr </a>
+      </article>
 
-     </section>
-     <h1 style="color:ghostwhite">|Fysiske signal i datautstyr|</h1>
-     <h2 style="color:ghostwhite">Teiknsett</h2>
+    </section>
+
 
   </header>
-<main>
-  <img src="bilde/keyboard.jpg" alt=" Det heksadesimale talsystemet går frå 0 til 9 og A til F">
-  <p>I ei datamaskin er det teiknsettet som avgjer kordan bokstavar, tall og andre skriftteink skal visast på skjermen. Kvar bokstav, tall og teink har sit eige binære tal.
-  Øverst i koden skriv ein - meta charset="UTF-8"-,det er eit Unicode-teiknsett og står for Unicode Transformation 8-bit. Kjenneteiknet på UTF-8 er at den har ulike lengder på ein byte, den kan gå frå ein til fire.
- Med HTML er det automatisk UTF-8 som blir brukt som teiknsett</p>
- <p> Det heksadesimale talsysteme har 16 ulike teikn der talsystemet går frå 0 til 9 og bokstavane A til F. </p>
+  <main style="background-image: url('bilde/keyboard.jpg'); background-size: cover; background-repeat: repeat; margin: 0%; width: 100%; position: absolute; left: 0%; margin-top: 40px;">
 
-</main>
-  </body>
+    <article style="padding: 20px; min-height: 500px; font-size: 22px; font-weight: bold;">
+      <h1 style="color:ghostwhite; align-self: center;">|Fysiske signal i datautstyr|</h1>
+      <h2 style="color:ghostwhite; align-self: center;">Teiknsett</h2>
+      <p>I ei datamaskin er det teiknsettet som avgjer kordan bokstavar, tall og andre skriftteink skal visast på
+        skjermen.
+        Kvar bokstav, tall og teink har sit eige binære tal.
+        Øverst i koden skriv ein - meta charset="UTF-8"-,det er eit Unicode-teiknsett og står for Unicode
+        Transformation
+        8-bit. Kjenneteiknet på UTF-8 er at den har ulike lengder på ein byte, den kan gå frå ein til fire.
+        Med HTML er det automatisk UTF-8 som blir brukt som teiknsett</p>
+      <p> Det heksadesimale talsysteme har 16 ulike teikn der talsystemet går frå 0 til 9 og bokstavane A til F. </p>
+    </article>
+
+  </main>
+</body>
+
 </html>

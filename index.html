@@ -1,50 +1,93 @@
 <!DOCTYPE html>
 <html lang="no" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title> Fysiske signal i datautstyr |Hjem| </title>
-    <link rel="stylesheet" href="kap3.css">
-  </head>
-  <body>
 
-    <header>
-       <!-- OVERSKRIFT, NAVIGASJON. -->
-       <section style="">
-         <a href="index.html" style="color:lightblue"> |Home|</a>
-         <a href="side2.html"> Binære tal </a>
-         <a href="side3.html"> Bilde </a>
-         <a href="side4.html"> Teiknsett </a>
-         <a href="side5.html"> Lyd </a>
-         <a href="side6.html"> Video </a>
-         <a href="side7.html"> Digitale utstyr </a>
+<head>
+  <meta charset="utf-8">
+  <title> Fysiske signal i datautstyr |Hjem| </title>
+  <link rel="stylesheet" href="kap3.css">
+  <link rel="icon" href="bilde/keyboard.jpg">
 
-       </section>
-       <h1 style="color:ghostwhite">|Fysiske signal i datautstyr|</h1>
-       <h2 style="color:ghostwhite"> Heim </h2>
+  <style>
+    main section {
+      width: 90%;
+      margin-left: 20px;
+      margin-right: 20px;
+      background-color: whitesmoke;
+      min-height: 100px;
+      padding: 20px;
+      border-radius: 2px;
+      display: flex;
+      flex-direction: row;
+    }
 
-    </header>
+    main section img {
+      margin-left: auto;
+    }
 
-    <main style="width:100%; display: flex; justify-content: center;">
-      <!-- ALT DU SKAL FORTELLA OM / VISA, TEXT, BILDER. -->
-      <section style="width: 90%; margin-left: 20px; margin-right: 20px; background-color: whitesmoke; min-height: 100px; padding: 20px; border-radius: 2px;">
-      <p> Dette er ei digital handbok frå Kapittel 3 - Fysiske signal i datautstyr, med delkapitta 3.1 - 3.6.
-      </p>
-      <p>Tema: </p>
-      <ul>
-        <li> Binnære tal </li>
-        <li> Bilde </li>
-        <li> Teiknsett </li>
-        <li> Lyd </li>
-        <li> Video </li>
-        <li> Digitale utstyr </li>
-      </ul>
-      <img src="bilde/data.jpg" alt="">
+    @media screen and (max-width: 800px) {
+      main section {
+        flex-direction: column;
+      }
 
-      </section>
-    </main>
+      main section img {
+        width: 200px;
+        height: 200px;
+        margin-left: 0%;
+        align-self: center;
+      }
+    }
+  </style>
+</head>
 
-    <footer>
-      <!-- ANDRE TING DU VIL KANSKJE HA PÅ NETTSIDA MEN SOM IKKJE ER RELEVANT FOR TEMA I "main"-taggen. F.EKS COPYRIGHT, KJELDER -->
-    </footer>
-  </body>
+<body>
+
+  <header>
+    <!-- OVERSKRIFT, NAVIGASJON. -->
+    <section style="">
+
+      <article>
+        <a href="index.html" style="color:lightblue"> |Home|</a>
+        <a href="side2.html"> Binære tal </a>
+        <a href="side3.html"> Bilde </a>
+        <a href="side4.html"> Teiknsett </a>
+      </article>
+      <article>
+        <a href="side5.html"> Lyd </a>
+        <a href="side6.html"> Video </a>
+        <a href="side7.html"> Digitale utstyr </a>
+      </article>
+
+    </section>
+
+
+  </header>
+
+  <main style="width:100%; display: flex; justify-content: center;">
+    <!-- ALT DU SKAL FORTELLA OM / VISA, TEXT, BILDER. -->
+    <h1 style="color:ghostwhite">|Fysiske signal i datautstyr|</h1>
+    <h2 style="color:ghostwhite"> <u>Heim</u> </h2>
+    <section style="">
+      <article style="font-size: 20px;">
+        <p> Dette er ei digital handbok frå Kapittel 3 - Fysiske signal i datautstyr, med delkapitta 3.1 - 3.6.
+        </p>
+        <p>Tema: </p>
+        <ul>
+          <li> <a href="side2.html">Binnære tal</a> </li>
+          <li> <a href="side3.html">Bilde</a> </li>
+          <li> <a href="side4.html">Teiknsett</a> </li>
+          <li> <a href="side5.html">Lyd</a> </li>
+          <li> <a href="side6.html">Video</a> </li>
+          <li> <a href="side7.html">Digitale utstyr</a> </li>
+        </ul>
+      </article>
+      <img style="" src="bilde/data.jpg" alt="">
+
+    </section>
+  </main>
+
+  <footer>
+    <!-- ANDRE TING DU VIL KANSKJE HA PÅ NETTSIDA MEN SOM IKKJE ER RELEVANT FOR TEMA I "main"-taggen. F.EKS COPYRIGHT, KJELDER -->
+  </footer>
+</body>
+
 </html>
